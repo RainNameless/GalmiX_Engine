@@ -1,0 +1,31 @@
+/* Hide scrollbars for the entire document */
+html, body {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+/* Hide scrollbars for the editor container */
+.editor-content-container {
+  overflow: hidden !important;
+}
+
+/* Hide scrollbars for ReactFlow elements */
+.react-flow, 
+.react-flow__renderer, 
+.react-flow__zoompane, 
+.react-flow__selectionpane, 
+.react-flow__selection {
+  overflow: hidden !important;
+}
+
+/* Change cursor to grab when hovering over the pane */
+.react-flow__pane {
+  cursor: grab;
+}
+
+/* Change cursor to grabbing when dragging the pane */
+.react-flow__pane:active {
+  cursor: grabbing;
+}
+
